@@ -1,0 +1,169 @@
+.register {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+        align-items: center;
+        gap: 22px;
+
+        & input {
+            width: 100%;
+            max-width: 768px;
+            padding: 24px;
+            border: 1px rgba(109.09, 110.02, 117.94, 0.50) solid;
+            outline: none;
+        }
+    }
+
+    &__title {
+        color: #232536;
+        font-size: 48px;
+        font-family: Sen;
+        font-weight: 700;
+        line-height: 64px;
+        word-wrap: break-word;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 768px;
+        padding: 16px 0px;
+        margin-top: 50px;
+        color: #232536;
+        background-color: #FFD050;
+        border: none;
+        font-size: 24px;
+        font-family: Sen;
+        font-weight: 700;
+        line-height: 32px;
+        word-wrap: break-word;
+        cursor: pointer;
+    }
+}
+
+// Register list
+
+.register__list {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register__card {
+    display: flex;
+    color: #232536;
+    gap: 15px;
+    font-size: 24px;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 48px;
+    word-wrap: break-word;
+}
+
+.register__email {
+    color: red;
+}
+
+.register__deletebtn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../images/delete-button.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 38px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 706px) {
+    .register__container {
+        padding: 100px 0px 30px;
+
+        & input {
+            padding: 16px;
+        
+        }
+    }
+
+    .register__title{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .register__card {
+        font-size: 20px;
+    }
+
+    .register__button{
+        padding: 12px 0px;
+        margin-top: 30px;
+    }
+
+    // .register__deletebtn{
+    //     width: 35px;
+    // height: 35px;
+    // }
+}
+
+@media only screen and (max-width: 596px) {
+    .register__card {
+        gap: 10px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 524px) {
+    .register__card {
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .register__deletebtn {
+        background-size: 28px;
+    }
+}
+
+
+@media only screen and (max-width: 471px) {
+    .register__card {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .register__deletebtn {
+        background-size: 28px;
+    }
+
+     .register__deletebtn{
+        width: 35px;
+    height: 35px;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .register__card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        border: 1px rgba(109.09, 110.02, 117.94, 0.50) solid;
+        border-radius: 3px;
+        padding: 20px;
+
+        & p{
+            display: block;
+        }
+    }
+
+    .register__deletebtn {
+        margin-top: 0px;
+    }
+}

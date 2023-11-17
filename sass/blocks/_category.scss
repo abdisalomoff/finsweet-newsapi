@@ -1,0 +1,115 @@
+.category {
+   &__container{
+    padding: 73px 0px 69px;
+   }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        justify-content: center;
+        gap: 32px;
+    }
+}
+
+.category-card {
+    width: 100%;
+    max-width: 296px;
+    padding: 31.03px 32px;
+    border: 1px rgb(110, 111, 119, 0.3)solid;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px #FFD050 solid;
+        background-color: #FFD050;
+        transition: all 0.5s ease-out;
+        // border: none;
+    }
+
+    &__imgbox {
+        width: 48px;
+        height: 47px;
+        border-radius: 5px;
+        background-color: #FBF6EA;
+        position: relative;
+    }
+
+    &__img {
+        margin-bottom: 15.51px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        color: #232536;
+        font-size: 28px;
+        font-family: Sen;
+        font-weight: 700;
+        line-height: 40px;
+        word-wrap: break-word;
+        margin-bottom: 3.88px;
+    }
+
+    &__text {
+        color: #6D6E76;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 400;
+        line-height: 28px;
+        word-wrap: break-word
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .category-card {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    .category-card {
+        max-width: 350px;
+    }
+}
+
+
+@media only screen and (max-width: 772px) {
+    .category-card {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    .category-card {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 592px) {
+    .category-card {
+        max-width: 220px;
+    }
+}
+
+@media only screen and (max-width: 532px) {
+    .category__container {
+        padding: 42px 0px;
+    }
+
+    .category__title {
+        margin-bottom: 42px;
+    }
+
+
+    .category-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,208 @@
+.header {
+    width: 100%;
+    background-color: #232536;
+}
+
+.header__container{
+    padding: 13px 0px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // margin-left: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header .navbar__link {
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+    display: block;
+}
+
+.navbar__item:hover .navbar__link {
+    color: #FFD050;
+    padding: 3px 0 2px;
+    border-bottom: 1px solid #FFD050;
+    transition: all 0.3s ease-out;
+}
+
+.navbar .btn {
+    margin-left: 48px;
+    padding: 16px 48px;
+    background-color: #fff;
+    color: #232536;
+    font-size: 18px;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 24px;
+    // display: block;
+
+    &:hover {
+        background-color: #FFD050;
+        transition: all 0.3s ease-out;
+    }
+}
+
+.header__burger-button {
+    display: none;
+}
+
+// RESPONSIVE AND BURGER BUTTON *********************
+
+@media only screen and (max-width: 706px) {
+    .header {
+        position: fixed;
+        z-index: 99;
+        padding: 20px 0px;
+
+    }
+
+
+    .header__burger-button {
+        display: block;
+        height: 25px;
+        width: 30px;
+        position: relative;
+        transition: all 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        & span {
+            position: absolute;
+            width: 100%;
+            transition: all 0.3s ease;
+            height: 2px;
+            top: 50%;
+            left: 0;
+            background-color: #fff;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            display: block;
+            background-color: #fff;
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+
+    .header__burger-button.active {
+        animation: rotate 10s infinite linear;
+    }
+
+    .header__burger-button.active::before {
+        transform: rotate(90deg);
+        top: 50%;
+    }
+
+    .header__burger-button.active::after {
+        transform: scale(0);
+    }
+
+    // BURGER BUTTON FINISH
+
+    // NAVBAR STYLE 
+    .navbar {
+        display: flex;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        font-size: 32px;
+        width: 100%;
+        height: 100vh;
+        background-color: #232536;
+        transition: 0.3s ease;
+        top: 79px;
+        position: fixed;
+        left: 0px;
+        z-index: 3;
+        transition: 0.5s all ease-in;
+        // position: relative;
+    }
+
+    .navbar .btn {
+        // position: absolute;
+        // // top: 45%;
+        // // left: 35%;
+        // transform: translate(center, center);
+        display: none;
+    }
+
+    .navbar__list {
+        margin: 20px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: all 4s linear;
+    }
+
+    .navbar__button {
+        padding: 16px 144px;
+    }
+
+    .navbar__container {
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .navbar.active {
+        display: block;
+        z-index: 3;
+    }
+
+    .navbar.active .navbar__list {
+        left: 0;
+        z-index: 10;
+    }
+
+    .navbar.active .navbar__container {
+        position: fixed;
+        z-index: 10;
+        background-color: #232536;
+        width: 100%;
+        transition: all 4s linear;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0turn);
+        }
+
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+
+
+}

@@ -1,0 +1,144 @@
+.contents__container {
+    padding: 57px 0px;
+}
+
+.contents__input {
+    width: 100%;
+    padding: 24px;
+    border: 1px rgba(109.09, 110.02, 117.94, 0.50) solid;
+    outline: none;
+}
+
+.contents__list {
+    margin: 57px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contents__card {
+    display: flex;
+    width: 100%;
+    gap: 49px;
+}
+
+.contents__img {
+    width: 100%;
+    max-width: 448px;
+    height: 312px;
+    object-fit: cover;
+}
+
+.contents__body {
+    width: 100%;
+}
+
+.contents__heading {
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 3px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.contents__title {
+    color: #232536;
+    font-size: 36px;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 48px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.contents__text {
+    color: #232536;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.contents__towebsitebtn {
+    margin-left: 2%;
+    color: #0000EE;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    padding-right: 25px;
+
+    &:active {
+        color: red;
+    }
+
+}
+
+
+@media only screen and (max-width: 1181px) {
+    .contents__img {
+        max-width: 400px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1111px) {
+    .contents__img {
+        max-width: 380px;
+        height: 290px;
+    }
+}
+
+@media only screen and (max-width: 1092px) {
+    .contents__img {
+        max-width: 370px;
+        height: 280px;
+    }
+
+    .contents__heading{
+        font-size: 14px;
+    }
+
+    .contents__title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (max-width: 1092px) {
+    .contents__img {
+        max-width: 350px;
+        height: 260px;
+    }
+
+    .contents__heading{
+        font-size: 14px;
+    }
+
+    .contents__title{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media only screen and (max-width: 838px){
+    .contents__card{
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contents__img{
+        width: 100%;
+        margin: 0 auto;
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+    }
+} 
+
+

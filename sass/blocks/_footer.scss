@@ -1,0 +1,58 @@
+.footer {
+    background-color: #232536;
+    // position: fixed;
+    // bottom: 0;
+    // width: 100%;
+}
+
+.footer__container {
+    padding: 54px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__adress {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+    font-style: normal;
+    opacity: 0.7;
+}
+
+.footer__emailandphone a {
+    color: white;
+
+    &:active {
+        color: blue;
+    }
+}
+
+.footer__network {
+    display: flex;
+    gap: 27px;
+}
+
+@media only screen and (max-width: 991.2px) {
+    .footer {
+        background-color: #232536;
+    }
+}
+
+@media only screen and (max-width: 991.2px) {
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .footer__network {
+        margin-top: 10px;
+    }
+
+}

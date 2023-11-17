@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item"><a href="./index.html" class="navbar__link">Home</a></li>
+                        <li class="navbar__item"><a href="./busines.html" class="navbar__link">Business</a></li>
+                        <li class="navbar__item"><a href="./news.html" class="navbar__link">All News</a></li>
+                        <li class="navbar__item"><a href="./register.html" class="navbar__link">Register</a></li>
+                    </ul>
+                    <a href="#" class="btn">Login</a>
+                </nav>
+                <div class="header__burger-button">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="height: 100%; min-height: 100vh;">
+        <section class="business-hero">
+            <div class="container">
+                <div class="business__container">
+                    <h1 class="business-hero__title">Business</h1>
+                    <p class="business-hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore.</p>
+                    <span class="business-hero__bottom">Blog > Business</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contents">
+            <div class="container">
+                <div class="contents__container">
+
+                    <form class="contents__form" id="contents__form">
+                        <input class="contents__input" id="contents__input" type="text" placeholder="Searching...">
+                    </form>
+
+                    <ul class="contents__list" id="contents__list">
+                        <div class="loading">
+                            <div class="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <template class="contents__card">
+                            <img class="contents__img" src="./images/popular-first.jpg" alt="business">
+                            <div class="contensts__body">
+                                <div class="contents__heading"> <span class="contents__name">CNBC </span> | By <span
+                                        class="contents__author"> John Doe </span> | <span class="contents__date">Aug
+                                        23, 2021</span> </div>
+                                <h2 class="contents__title">Top 6 free website mockup tools 2022</h2>
+                                <p class="contents__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa
+                                    enim nec. <a href="" class="contents__towebsitebtn">to website read more</a></p>
+                            </div>
+                        </template>
+
+                    </ul>
+                    <div id="pagination" class="pagination">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+
+                <address class="footer__adress">
+                    <p class="footer__city">Finstreet 118 2561 Fintown</p>
+
+                    <div class="footer__emailandphone">
+                        <a href="mailto:Hello@finsweet.com">Hello@finsweet.com</a>
+                        <a href="tel:+998932692720">020 7993 2905</a>
+                    </div>
+                </address>
+
+                <div class="footer__network">
+                    <a class="footer__iconlink" href="https://www.facebook.com/abdisalomoff/">
+                        <img class="footer-icon" src="./images/facebook.svg" alt="facebook">
+                    </a>
+                    <a class="footer__iconlink" href="#">
+                        <img class="footer-icon" src="./images/twitter.svg" alt="twitter">
+                    </a>
+                    <a class="footer__iconlink" href="https://www.instagram.com/abdisalomoff/">
+                        <img class="footer-icon" src="./images/instagram.svg" alt="instagram">
+                    </a>
+                    <a class="footer__iconlink" href="#">
+                        <img class="footer-icon" src="./images/linkedin.svg" alt="linkedin">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
